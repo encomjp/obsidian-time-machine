@@ -1,0 +1,24 @@
+{
+  "name": "obsidian-time-machine",
+  "version": "0.1.0",
+  "description": "Scrub your whole vault back through time: per-note history, diffs and one-click restore, with no git.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/"
+  },
+  "keywords": ["obsidian", "history", "versions", "restore", "diff", "backup"],
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.38.1",
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.25.5",
+    "obsidian": "^1.8.7",
+    "typescript": "^5.8.3"
+  },
+  "author": "encomjp"
+}

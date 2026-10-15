@@ -1,0 +1,6 @@
+node_modules/
+main.js
+*.log
+data.json
+dist/
+test-vault/
