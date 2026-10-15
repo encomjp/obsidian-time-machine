@@ -10,7 +10,14 @@
     "check": "tsc --noEmit",
     "test": "node --test tests/"
   },
-  "keywords": ["obsidian", "history", "versions", "restore", "diff", "backup"],
+  "keywords": [
+    "obsidian",
+    "history",
+    "versions",
+    "restore",
+    "diff",
+    "backup"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@codemirror/state": "^6.5.2",

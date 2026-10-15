@@ -114,7 +114,7 @@ export class TimeMachineView extends ItemView {
     const max = Math.max(1, ...counts);
     for (const c of counts) {
       const cell = this.stripEl.createDiv({ cls: "tm-cell" });
-      cell.style.opacity = c === 0 ? "0.08" : String(0.25 + (0.75 * c) / max);
+      cell.setCssProps({ opacity: c === 0 ? "0.08" : String(0.25 + (0.75 * c) / max) });
     }
   }
 

@@ -2,7 +2,7 @@
   "id": "vault-time-machine",
   "name": "Vault Time Machine",
   "version": "0.1.0",
-  "minAppVersion": "1.5.0",
+  "minAppVersion": "1.8.0",
   "description": "Scrub your whole vault back through time: per-note history, diffs and one-click restore, with no git.",
   "author": "encomjp",
   "isDesktopOnly": false
