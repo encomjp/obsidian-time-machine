@@ -30,7 +30,11 @@ Commands: **Open Time Machine**, **Show history of this note**, **Save a snapsho
 
 ## Install
 
-### Easiest: BRAT (installs and keeps it updated)
+### Obsidian directory
+
+Vault Time Machine is listed in the official Obsidian plugin directory: [community.obsidian.md/plugins/vault-time-machine](https://community.obsidian.md/plugins/vault-time-machine). Install it from there, or from Settings → Community plugins → Browse once it appears for you.
+
+### BRAT (installs and keeps it updated)
 
 1. Install **BRAT** from Settings → Community plugins → Browse, and enable it.
 2. Run **BRAT: Add a beta plugin for testing** and enter `encomjp/obsidian-time-machine`, or click
