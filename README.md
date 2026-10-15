@@ -70,6 +70,12 @@ The engine (`src/history.ts`, `src/diff.ts`) has no Obsidian dependency and is c
 including a randomised diff round-trip test and a concurrency test for the store. Tested in Obsidian
 1.14.4 (Flatpak, Linux).
 
+## Disclosures
+
+- **Network use:** none.
+- **Files outside your vault:** none. History is stored inside your vault at `.obsidian/plugins/vault-time-machine/history`.
+- **No** account, payment, ads, telemetry or self-updating.
+
 ## Support
 
 If this saves you time, you can [buy me a coffee](https://www.paypal.com/donate/?hosted_button_id=H4SCC24R8KS4A).
