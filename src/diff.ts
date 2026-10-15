@@ -88,7 +88,6 @@ function myersCore(a: ArrayLike<number>, ao: number, n: number, b: ArrayLike<num
     const px = prev[(pk + d - 1) / 2]!;
     const py = px - pk;
     const mx = pk === k + 1 ? px : px + 1;
-    const my = mx - k;
     while (x > mx) {
       rev.push(0);
       x--;
@@ -150,8 +149,8 @@ export function toHunks(lines: DiffLine[], context = 3): Hunk[] {
   const hunks: Hunk[] = [];
   const ctx = Math.max(0, context);
   // next old/new line number at each index
-  const oldAt: number[] = new Array(lines.length + 1);
-  const newAt: number[] = new Array(lines.length + 1);
+  const oldAt = new Array<number>(lines.length + 1);
+  const newAt = new Array<number>(lines.length + 1);
   let o = 1;
   let nw = 1;
   for (let i = 0; i < lines.length; i++) {

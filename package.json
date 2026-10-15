@@ -1,6 +1,6 @@
 {
   "name": "obsidian-time-machine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scrub your whole vault back through time: per-note history, diffs and one-click restore, with no git.",
   "main": "main.js",
   "type": "module",

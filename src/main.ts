@@ -35,8 +35,8 @@ export default class TimeMachinePlugin extends Plugin {
     await this.history.load();
 
     this.registerView(VIEW_TYPE, (leaf: WorkspaceLeaf) => new TimeMachineView(leaf, this));
-    this.addRibbonIcon("history", "Vault Time Machine", () => void this.openView());
-    this.addCommand({ id: "open", name: "Open Time Machine", callback: () => void this.openView() });
+    this.addRibbonIcon("history", "Vault time machine", () => void this.openView());
+    this.addCommand({ id: "open", name: "Open time machine", callback: () => void this.openView() });
     this.addCommand({
       id: "note-history",
       name: "Show history of this note",

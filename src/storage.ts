@@ -21,7 +21,7 @@ export class VaultStorage implements Storage {
     return this.ready;
   }
 
-  async readJson(name: string): Promise<unknown | null> {
+  async readJson(name: string): Promise<unknown> {
     await this.init();
     const base = `${this.dir}/${name}.json`;
     // The file itself, then the newest copy a crashed write may have left behind.

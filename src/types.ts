@@ -13,7 +13,7 @@ export interface Version {
 
 /** Where history lives. In the plugin this is a folder inside the vault's config dir; in tests, memory. */
 export interface Storage {
-  readJson(name: string): Promise<unknown | null>;
+  readJson(name: string): Promise<unknown>;
   writeJson(name: string, value: unknown): Promise<void>;
   readText(key: string): Promise<string | null>;
   writeText(key: string, text: string): Promise<void>;

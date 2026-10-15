@@ -31,7 +31,7 @@ export class TimeMachineView extends ItemView {
   }
 
   getViewType() { return VIEW_TYPE; }
-  getDisplayText() { return "Time Machine"; }
+  getDisplayText() { return "Time machine"; }
   override getIcon() { return "history"; }
 
   override async onOpen() {
@@ -121,7 +121,7 @@ export class TimeMachineView extends ItemView {
   private renderMoment() {
     const r = this.plugin.history.range();
     if (!r) {
-      this.labelEl.setText("No history yet. Edit a note, or run “Save a snapshot of every note now”.");
+      this.labelEl.setText("No history yet. Edit a note, or run “save a snapshot of every note now”.");
       this.listEl.empty();
       this.diffEl.empty();
       return;
@@ -201,15 +201,19 @@ export class TimeMachineView extends ItemView {
     } else if (version) {
       const label = current === null ? "Restore deleted note" : "Restore this version";
       const restore = actions.createEl("button", { cls: "mod-cta", text: label });
-      restore.addEventListener("click", async () => {
-        const path = await this.plugin.restore(version);
-        if (path) { new Notice(`Restored ${path} to ${stamp(version.time)}`); this.reload(false); }
+      restore.addEventListener("click", () => {
+        void (async () => {
+          const path = await this.plugin.restore(version);
+          if (path) { new Notice(`Restored ${path} to ${stamp(version.time)}`); this.reload(false); }
+        })();
       });
       if (current !== null) {
         const copy = actions.createEl("button", { text: "Restore as a copy" });
-        copy.addEventListener("click", async () => {
-          const path = await this.plugin.restore(version, true);
-          if (path) { new Notice(`Saved as ${path}`); this.reload(false); }
+        copy.addEventListener("click", () => {
+          void (async () => {
+            const path = await this.plugin.restore(version, true);
+            if (path) { new Notice(`Saved as ${path}`); this.reload(false); }
+          })();
         });
       }
       const open = actions.createEl("button", { text: "Open note" });

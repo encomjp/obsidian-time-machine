@@ -12,7 +12,7 @@ export class MemoryStorage implements Storage {
     this.json = new Map();
     this.texts = new Map();
   }
-  async readJson(name: string): Promise<unknown | null> {
+  async readJson(name: string): Promise<unknown> {
     return this.json.has(name) ? structuredClone(this.json.get(name)) : null;
   }
   async writeJson(name: string, value: unknown): Promise<void> {
