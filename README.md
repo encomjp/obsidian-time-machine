@@ -85,3 +85,8 @@ If this saves you time, you can [buy me a coffee](https://www.paypal.com/donate/
 An independent project, ported from Starnote's version history. It is not affiliated with, endorsed by,
 or supported by Dynalist Inc. (Obsidian). Provided "as is" under the MIT license, without warranty. It
 writes to your notes when you restore, so keep your own backups. See [LICENSE](LICENSE).
+
+
+---
+
+Made by [Adrian Kozlowski](https://adrian-kozlowski.de), IT specialist for systems integration and IT security in Mannheim. More projects on the [portfolio](https://adrian-kozlowski.de), and free browser games at [games.adrian-kozlowski.com](https://games.adrian-kozlowski.com).
